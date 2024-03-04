@@ -11,16 +11,18 @@ int main(void)
 
 	    srand(time(0));
 	    n = rand() - RAND_MAX / 2;
-	    while (n >= 10)
-	    {
-		    n /= 10;
+	  while (n <= 10)
+	   {
+	last_Digit = n % 10;	
+		
 	    }
-		    n = last_Digit;
+		   
             if (last_Digit > 5)
 	    {
-		printf("Last digite of %d is %d and is greater than 5\n", n, last_Digit);
+		printf("Last digite of %d is %d	and is greater than 5\n", n, last_Digit);
 	    }
     	    
  /* your code goes there */
 	    return (0);
-}
+
+} 

@@ -1,13 +1,15 @@
 #include <string.h>
 #include <stdio.h>
-int main(void)
+int main (void)
 {
-		char alphabet = 'a';
+		char alphabet = 97;
 
-		while(alphabet <= 'z')
+		while(alphabet <= 122)
 		{
 			putchar(alphabet);
 			alphabet++;
 		}
-		return(0);
+		putchar(10);
+
+		return (0);
 } 

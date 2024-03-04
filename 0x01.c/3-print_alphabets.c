@@ -2,10 +2,10 @@
 
 int main (void)
 {
-	char a = 'a';
+	char a = 97;
 	char A = 'A';
 
-	while (a <= 'z')
+	while (a <= 122)
 	{
 		putchar(a);
 		a++;
@@ -16,6 +16,6 @@ int main (void)
 		A++;
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
 

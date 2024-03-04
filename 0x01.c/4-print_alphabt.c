@@ -1,20 +1,17 @@
 #include <stdio.h>
 
-int main (void)
+int main(void)
 {
-	char a = 'a';
-	char b = '\n';
-	putchar(a);
-	while (a <= 'z')
+	char a = 97;
+	char b = 10;
+
+	while (a <= 122)
 	{
+	if (a != 101 && a != 113)	
+		putchar(a);
 		a++;
-	if (a != 'e' && a != 'q')	
-      	putchar(a);
-	   continue;
 	}
-  	putchar(b);
+		putchar(b);
 
-	return(0);
+	return (0);
 }
-
-

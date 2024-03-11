@@ -2,15 +2,20 @@
 
 int main(void)
 {
-	int n = '0';
-	int s = ',';
-	int f = ' ';
-	while (n <= '9')
-	{
-		putchar(n);
-		n++;
+        int i;
 
-	}
+        for (i = 0 ; i <= 9 ; i++)
+        {
+                putchar('0' + i);
 
-	return (0);
+                if (i < 9)
+                {
+                        putchar(44);
+                        putchar(32);
+                }
+        }
+        putchar('\n');
+
+        return (0);
 }
+

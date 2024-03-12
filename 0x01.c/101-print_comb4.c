@@ -16,10 +16,11 @@ int main(void)
 				putchar('0' + j);
 				putchar('0' + h);
 				putchar('0' + l);
-				if (l < 9 )
+				if (j != 7 || h != 8 || l != 9)
+				{
 					putchar(',');
-					putchar(32);
-
+					putchar(' ');
+				}
 			}
 		}
 	}

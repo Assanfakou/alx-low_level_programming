@@ -5,20 +5,23 @@ int main(void)
 	int n;
 	int m;
 
-	for (n = 0; i <= 9; n++)
+	for (n = 0; n <= 9; n++)
 	{
 		for (m = n; m <= 9; m++)
 		{
 			if (n == m)
 				continue;
+
 			putchar('0' + n);
 			putchar('0' + m);
-	if (!(n == 8 || m == 9))
 
-		putchar(',');
-		putchar(' ');
+			if (m != 9 || n != 8)
+			{
+				putchar(',');
+				putchar(' ');
+			}
 	}
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }

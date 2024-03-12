@@ -2,20 +2,23 @@
 
 int main(void)
 {
-	int num;
+	int n;
+	int m;
 
-	for (num = 0 ;num <= 89 ;num++)
+	for (n = 0; i <= 9; n++)
 	{
-		putchar(48 + num / 10);
-		putchar(48 + num % 10);
+		for (m = n; m <= 9; m++)
+		{
+			if (n == m)
+				continue;
+			putchar('0' + n);
+			putchar('0' + m);
+	if (!(n == 8 || m == 9))
 
-
-	if (num < 9)
-
-		putchar(32);
-		putchar(44);
+		putchar(',');
+		putchar(' ');
 	}
-
+	}
 	putchar('\n');
-	return (0);
+	return(0);
 }

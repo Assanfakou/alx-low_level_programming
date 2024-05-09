@@ -7,17 +7,16 @@
 int main(void)
 {
 	char a = 0;
-	char b = 97;
+	char b;
 
-	while (a <= 16)
+	while (a <= 9)
 	{
 		putchar('0' + a);
 		a++;
 	}
-	while (b <= 102)
+	for (b = 'a'; b <= 'f'; b++)
 	{
 		putchar(b);
-		b++;
 	}
 	putchar('\n');
 

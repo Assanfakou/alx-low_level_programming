@@ -2,27 +2,29 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
-
+ /**
+  3  *  * main - print all possible combinations of three digits
+  4  *   *
+  5  *      * Return: O if succeed
+  6  *       **/
 /* betty style doc for function main goes there */
 int main(void)
 {
-	   int n ;
-	   int last_Digit;
+	int n;
+	int last_Digit;
 
-	    srand(time(0));
-	    n = rand() - RAND_MAX / 2;
-	  while (n <= 10)
-	   {
-	last_Digit = n % 10;	
-		
-	    }
-		   
-            if (last_Digit > 5)
-	    {
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	while (n <= 10)
+	{
+	last_Digit = n % 10;
+	}
+	if (last_Digit > 5)
+	{
 		printf("Last digite of %d is %d	and is greater than 5\n", n, last_Digit);
-	    }
-    	    
- /* your code goes there */
-	    return (0);
+	}
 
-} 
+ /* your code goes there */
+	return (0);
+
+}

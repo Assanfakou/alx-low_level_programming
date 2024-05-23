@@ -1,9 +1,9 @@
-#include "headerfil.h"
+#include "main.h"
 
-int main()
+int main(void)
 {
 	assankou("_putchar");
 
-	return 0;
+	return (0);
 }
 

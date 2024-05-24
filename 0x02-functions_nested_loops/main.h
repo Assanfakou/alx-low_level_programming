@@ -1,6 +1,10 @@
 #include <stdio.h>
-void assankou(char* name)
+
+void print_alphabet(char* alpha)
+{
+	char* c ="abcdefghigklmnopqrstuvwxyz";	
+void _putchar(char* name)
 {
 	printf("%s", name);
 }
-
+}

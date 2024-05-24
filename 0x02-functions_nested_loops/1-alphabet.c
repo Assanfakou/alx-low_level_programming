@@ -4,9 +4,9 @@
  *
  * Return: Always 0.
  */
-int main()
+void print_alphabet(char* alpha)
 {
-	_putchar("_putchar");
-	_putchar("\n");
-	return(0);
+	_putchar(c);
+
+	_putchar('\n');
 }

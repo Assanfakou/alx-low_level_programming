@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void print_alphabet(char* alpha)
+void print_alphabet(char* c)
 {
-	char* c ="abcdefghigklmnopqrstuvwxyz";	
+	printf("%s", c);
 void _putchar(char* name)
 {
 	printf("%s", name);

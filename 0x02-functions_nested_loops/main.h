@@ -1,10 +1,5 @@
 #include <stdio.h>
-
-void print_alphabet(char* c)
-{
-	printf("%s", c);
-void _putchar(char* name)
-{
-	printf("%s", name);
-}
-}
+/*Prototype*/
+int _putchari(char c);
+int print(char *str);
+void print_alphabet(void);

@@ -1,17 +1,23 @@
 #include "main.h"
+
 /**
  * main - check the code
  *
  * Return: Always 0.
  */
-void print_alphabet(char* c)
+int _putchar(char* name);
+void print_alphabet(void)
 {
-int main (void)
-{
-	char* c = "abcdefghijklmnopqrstuvwxyz";
-	_putchar(c);
+	char* c;
 
-	_putchar('\n');
-	return (0);
+	for(c = "a"; c <= "z"; c++);
 }
+int main ()
+{
+
+	_putchar("%s", print_alphabet);
+
+//	_putchar('\n');
+
+	return (0);
 }

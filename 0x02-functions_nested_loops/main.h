@@ -1,5 +1,4 @@
-#include <stdio.h>
+
 /*Prototype*/
-int _putchari(char c);
-int print(char *str);
+int _putchar(char c);
 void print_alphabet(void);

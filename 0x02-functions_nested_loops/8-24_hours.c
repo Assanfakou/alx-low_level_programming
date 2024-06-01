@@ -8,12 +8,11 @@ void jack_bauer(void)
 	{
 		for(c = 0; c <= 9; c++)
 		{
+			if(!(f == 2 && c != 3))
 			for(j = 0; j <= 5; j++)
 			{
 				for(s = 0; s <= 9; s++)
 				{
-					if (f == 2 && c == 3 && j == 5 && s == 9)		
-						break;
 					_putchar(f + '0');
 					_putchar(c + '0');
 					_putchar(':');

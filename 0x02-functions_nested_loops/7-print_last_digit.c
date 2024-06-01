@@ -2,8 +2,12 @@
 
 int print_last_digit(int c)
 {
-	int n;
+	c %= 10;
+	_putchar(c + '0');
 
-	n = c % 10;
-	return n;
+	if(c < 0)
+	{
+		return (c * -1);
+	}
+	return c;
 }

@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * main - check the code
  *
@@ -8,7 +8,7 @@
 int main(void)
 {
     int r;
-	printf("hello world");
+
     print_last_digit(98);
     print_last_digit(0);
     r = print_last_digit(-1024);

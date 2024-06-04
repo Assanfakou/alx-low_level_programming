@@ -1,18 +1,12 @@
 #include <stdio.h>
-/* int add(int a)
+int main(void)
 {
-	if(a > 0)
-		return a +;
-}*/
+	int a, total;
 
-int main ()
-{
-	int a, total, mul;
-	
 	a = 0;
-	while(a < 1024)
+	while (a < 1024)
 	{
-		if(a % 3 == 0 || a % 5 == 0)
+		if (a % 3 == 0 || a % 5 == 0)
 		{
 			a += total;
 			printf("%d ", total);

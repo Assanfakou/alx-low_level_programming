@@ -8,12 +8,10 @@ int main()
 	{
 	for(n = 0; n >= 100 ;n++)
 	{
-	
 		printf("%d- say hi ", n);
 	}
 		printf("\n");
 		j++;
 	}
 	return (0);
-
 }

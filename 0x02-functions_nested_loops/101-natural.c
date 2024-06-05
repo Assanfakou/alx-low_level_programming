@@ -3,16 +3,16 @@ int main(void)
 {
 	int a, total;
 
+	total = 0;
 	a = 0;
 	while (a < 1024)
 	{
 		if (a % 3 == 0 || a % 5 == 0)
 		{
-			a += total;
-			printf("%d ", total);
+			total += a;
 		}
 		a++;
 	}
-	printf("\n");
+	printf("%d\n", total );
 	return (0);
 }

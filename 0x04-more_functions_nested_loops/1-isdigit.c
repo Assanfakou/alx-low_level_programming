@@ -1,8 +1,8 @@
 #include "main.h"
 
-int _isupper(int c)
+int _isdigit(int c)
 {
-	if (c == 65)
+	if (c == 48)
 	{
 		return (1);
 	}

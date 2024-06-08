@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * int _abs - return a negative probleme to positive
- * @l: integer
- * Return: Number of digits in l
+ * _abs - Computes the absolute value of an integer
+ *
+ * @x: THe integer that will be tested
+ *
+ * Return: The absulate value of x
  */
 int _abs(int l)
 {

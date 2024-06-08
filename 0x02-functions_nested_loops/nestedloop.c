@@ -1,15 +1,17 @@
 #include <stdio.h>
-
+#include "main.h"
 int main()
 {
-	int h, j, n = 0;
-
-	while(j < 100)
+	int h, j, n;
+	j = 0;
+	while (j < 5)
 	{
-	for(n = 0; n >= 100 ;n++)
-	{
-		printf("%d- say hi ", n);
-	}
+		n = 0;
+		while (n < 3)
+		{
+			printf(" ");
+			n++;
+		}
 		printf("\n");
 		j++;
 	}

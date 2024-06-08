@@ -1,9 +1,11 @@
 #include "main.h"
 /**
- * mul - multuplicate two digit 
- * a - is a digit
- * b - is digit
- * Return: Always a " b.
+ * mul - multiplies two integers
+ *
+ * @a: The first integer
+ * @b: The second integer
+ *
+ * Return: thier multiplication
  */
 int mul(int a, int b)
 {

@@ -1,12 +1,27 @@
 #include "main.h"
-
+/**
+ * print_line - From 0 to 9
+ *
+ * @n: the number of _
+ *
+ * Return: nothing
+ */
 void print_line(int n)
 {
-	char g;
-	g = n * 57;
-	while (g < n)
+	int g;
+
+	if (n <= 0)
 	{
-		_putchar(g + '0');
-		n++;
+		_putchar('\n');
+	}
+	else
+	{
+		g = 0;
+		while (g < n)
+		{
+			_putchar('_');
+			g++;
+		}
+		_putchar('\n');
 	}
 }

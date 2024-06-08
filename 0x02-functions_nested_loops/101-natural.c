@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main(void)
 {
 	int a, total;
@@ -13,6 +14,6 @@ int main(void)
 		}
 		a++;
 	}
-	printf("%d\n", total );
+	printf("%d\n", total);
 	return (0);
 }

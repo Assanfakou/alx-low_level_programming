@@ -11,10 +11,6 @@ int main(void)
 	s = 1;
 	while (s <= 100)
 	{
-		if (s % 3 != 0 && s % 5 != 0)
-		{
-			printf("%d ", s);
-		}
 		if (s % 3 == 0 && s % 5 == 0)
 		{
 			printf("FizzBuzz ");
@@ -26,6 +22,10 @@ int main(void)
 		else if (s % 5 == 0)
 		{
 			printf("Buzz ");
+		}
+		else if (s % 3 != 0 && s % 5 != 0)
+		{
+			printf("%d ", s);
 		}
 		s++;
 	}

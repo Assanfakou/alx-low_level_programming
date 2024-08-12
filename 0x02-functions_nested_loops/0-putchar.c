@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 /**
  * main - check the code
@@ -6,7 +7,7 @@
  */
 int main(void)
 {
-	_putchar("_putchar");
-	_putchar("\n");
+	write (1, "_putchar", 8);
+	_putchar('\n');
 	return (0);
 }

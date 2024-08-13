@@ -15,7 +15,7 @@ char *leet(char *s)
 	int b;
 
 	while (s[i])
-	*{
+	{
 	b = 0;
 		while (le[b])
 		{

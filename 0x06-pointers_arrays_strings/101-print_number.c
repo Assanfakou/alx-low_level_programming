@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_number - print number in ulterrative
+ * print_number - print number in recurcive
  *
  * @n: number that will be recursseved
  *
@@ -29,7 +29,7 @@ void print_number(int n)
  * @n: number that will be recursseved
  *
  * Return: Always 0.
-*void print_number(int n)
+*void print_numbers(int n)
 *{
 *	unsigned int nb;
 *	long int div = 1;

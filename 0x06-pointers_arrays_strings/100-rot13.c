@@ -5,25 +5,33 @@
  *
  * @st: the string that will be codded
  *
- * Return: Always 0.
+ * Return: st.
  */
 
 char *rot13(char *st)
 {
 	int i;
+	int s;
+	int b;
+	char nor[] = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+	char rot[] = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
 
 	i = 0;
 	while (st[i])
 	{
-		if (st[i] >= 'a' && st[i] <= 'm')
+		b = 0;
+		s = 0;
+		while (nor[b] && rot[s])
 		{
-			st[i] += 13;
+			if (st[i] == nor[b])
+			{
+				st[i] = rot[s];
+				break;
+			}
+			b++;
+			s++;
 		}
-		else if (st[i] >= 'n' && st[i] <= 'z')
-		{
-			st[i] -= 13;
-		}
-		i++;
+	i++;
 	}
 	return (st);
 }

@@ -36,12 +36,12 @@ void print_times_table(int n)
 				_putchar((a * b) / 10 + '0');
 				_putchar((a * b) % 10 + '0');
 			}
-			else if (a * b >= 99)
+			else if (a * b > 99)
 			{
 				write(1, ", ", 2);
-				_putchar((a * b) / 100 + '0');
-				_putchar(((a * b) / 100) % 10 + '0');
-				_putchar((a * b) % 10 + '0');
+				_putchar(((a * b) / 100) + '0');
+				_putchar((((a * b) / 10) % 10) + '0');
+				_putchar(((a * b) % 10) + '0');
 			}
 			b++;
 		}

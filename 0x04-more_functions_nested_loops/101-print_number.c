@@ -1,41 +1,24 @@
 #include "main.h"
+
 /**
- * print_number - print the number
+ * print_number - print anynumber with recursion.
  *
- * @n: the number
+ * @n: the number that will be printed.
  *
- * Return: nothing
+ * Return: Always 0.
  */
 void print_number(int n)
 {
+	unsigned int nb;
 
-	if (n >= 0 && n <= 9)
-	{
-		_putchar(n + '0');
-	}
-	else if (n < 0)
+	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
+		nb = -n;
 	}
-	else if (n > 9 && n <= 99)
-	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	else if (n > 99 && n <= 999)
-	{
-		_putchar((n / 100) + '0');
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 10) + '0');
-	}
-	else if (n > 999 && n <= 9999)
-	{
-		_putchar((n / 1000) + '0');
-		_putchar(((n / 100) % 10) + '0');
-		_putchar(((n / 10) % 10) + '0');
-		_putchar((n % 10) + '0');
-	}
+	else
+		nb = n;
+	if (nb > 9)
+		print_number(nb / 10);
+	_putchar((nb % 10) + '0');
 }

@@ -36,7 +36,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
  */
 int main(void)
 {
-    char buffer[98] = {0x000};
+    char buffer[98] = {0x0};
 
     simple_print_buffer(buffer, 98);
     _memset(buffer, 0x01, 95);

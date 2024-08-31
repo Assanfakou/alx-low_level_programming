@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * *_strchr - compares if c is in s.
  *
@@ -11,7 +12,9 @@
 char *_strchr(char *s, char c)
 {
 	int i;
+	char *null;
 
+	null = NULL;
 	i = 0;
 	while (s[i])
 	{
